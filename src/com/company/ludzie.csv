@@ -1,0 +1,9 @@
+id,name,age,parent_id
+1,Piotr,47,1
+2,Pawel,32,5
+3,Wladyslaw,11,2
+4,Boleslaw,12,2
+5,Zdzislaw,48,7
+6,Zbigniew,50,0
+7,Bogumil,83,6
+8,Waclaw,89,6
