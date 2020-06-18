@@ -118,7 +118,7 @@ public class Main {
     static double getPercentOfAllElementsInRange(int[] ages,Double a,Double b){
         return  (double)Arrays.stream(ages).filter(x->(a<x&&x<=b)).count()*100/ages.length;
     }
-    
+
 
     public static void main(String[] args) {
         List<String> arguments= new ArrayList<>(Arrays.asList(args));
@@ -135,6 +135,7 @@ public class Main {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             List<String> columns=Arrays.asList(reader.readLine().split(","));
             indexOfIdColumn=columns.indexOf("id");
+            if(indexOfIdColumn==-1) throw new CsvException("no column name:id");
             while((line=reader.readLine())!=null)
             {
                 currentId=line.split(",")[indexOfIdColumn];
