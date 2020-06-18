@@ -1,0 +1,4 @@
+id,name,surname,age,city,parent_id
+1,Piotr,Nowak,17,Warszawa,2
+2,Andrzej,Kowalski,47,Poznan,0
+3,Stanislaw,Nowak,3,Krakow,2

@@ -1,0 +1,4 @@
+id,name,age,vaccine,parent_id
+1001,Bialek,3,+,0
+1002,Manio,1,+,1001
+1003,Sinio,2,-,1001
