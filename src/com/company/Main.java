@@ -56,9 +56,7 @@ public class Main {
         }
     }
 
-
-
-
+    
     public static void printNameAndCountParents(HashMap<String, List<String>> data, List<String> columns, String id) throws CsvException {
         int indexOfNameColumn=columns.indexOf("name");
         int indexOfParentIdColumn=columns.indexOf("parent_id");
@@ -121,7 +119,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        List<String> arguments= new ArrayList<>(Arrays.asList(args));
         HashMap<String,List<String>>data=new HashMap<>();
         String fileName=args[0];
         int numberOfOperation=Integer.parseInt(args[1]);
