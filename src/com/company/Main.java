@@ -139,6 +139,7 @@ public class Main {
             while((line=reader.readLine())!=null)
             {
                 currentId=line.split(",")[indexOfIdColumn];
+                if(currentId.equals(""))  throw new CsvException("no id value");
                 data.put(currentId,Arrays.asList(line.split(DELIMITER, -1)));
             }
             switch (numberOfOperation)
